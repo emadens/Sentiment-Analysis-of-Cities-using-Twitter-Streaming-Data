@@ -40,7 +40,7 @@ The data were inserted in the table directly from Spark using the connector.
 We query the data using the function “session.execute()” by Datastax that lets you define a query directly in CQL. The query was very easy and simply extracted all the relevant data for each city. 
 We created a Pandas dataframe with the extracted data, in this way we were able to plot it using the Matplotlib library. 
 We Plot different subchart for each city with the axis X being the date time and the axis Y being the level of sentiment (ranging from -1 to 1). In the figure below, a sample output of the system can be seen for Chicago and London for a timespan of roughly four minutes.
-![IMAGE](results.jpg)
+![Results](results.jpg)
 
 ### Results
 Finally, we were able to correctly extract and process streaming data from Twitter. The plot demonstrates that we can grasp and comprehend a city's general mood over the course of hours and days. 
