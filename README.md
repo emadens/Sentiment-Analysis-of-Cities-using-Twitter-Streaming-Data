@@ -8,7 +8,7 @@ Kafka, Spark Streaming, and Cassandra.
 
 ## How the project was conducted
 ### Architecture
-![Alt text](C:\Users\emaba\Documents\UNI\EIT\z. Materie Date\2nd Year KTH\Data Intensive Computing\Task 4/architecture.png)
+![IMAGE](architecture.jpg)
 Our project's architecture is made up of various components that are connected together. The data processing pipeline is made up of a script to retrieve data from Twitter, Kafka as a message broker, and spark streaming to actually clean and process the data. Finally, the results are saved on Cassandra, a NoSQL database.
 
 ### Data Ingestion from twitter (kafka producer)
@@ -40,7 +40,7 @@ The data were inserted in the table directly from Spark using the connector.
 We query the data using the function “session.execute()” by Datastax that lets you define a query directly in CQL. The query was very easy and simply extracted all the relevant data for each city. 
 We created a Pandas dataframe with the extracted data, in this way we were able to plot it using the Matplotlib library. 
 We Plot different subchart for each city with the axis X being the date time and the axis Y being the level of sentiment (ranging from -1 to 1). In the figure below, a sample output of the system can be seen for Chicago and London for a timespan of roughly four minutes.
-![Alt text](C:\Users\emaba\Documents\UNI\EIT\z. Materie Date\2nd Year KTH\Data Intensive Computing\Task 4/results.png)
+![IMAGE](results.jpg)
 
 ### Results
 Finally, we were able to correctly extract and process streaming data from Twitter. The plot demonstrates that we can grasp and comprehend a city's general mood over the course of hours and days. 
